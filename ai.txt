@@ -1,0 +1,8 @@
+I copied my code to claude to ask why my boolean variables for when a check box is selected weren’t being updated and were remaining at their default values
+It did not help because it told me I needed to use vs.GetActiveDialog() which is not a function in the Vectorworks API
+
+I asked claude why all the _selected boolean variables get set to false in the dialog handler.
+Once again, it was not helpful and hallucinated functions in the Vectorworks API.
+
+I asked chat gpt why the _selected boolean variables don’t update based on the GetBooleanItem function, it said I needed to use the dialog box id as a global variable.
+I made this change and it fixed the issue.
